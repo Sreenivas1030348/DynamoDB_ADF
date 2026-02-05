@@ -1,0 +1,9 @@
+{
+	"name": "datadynamos-df",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "700aa85d-a1a9-4b50-bed1-8f20a270e301",
+		"tenantId": "d420b80d-bc1a-429d-b6c6-587896c20153"
+	}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "EmployeeDataFlow",
+  "activities": [
+    {
+      "name": "CopyFromFlatFileToSql",
+      "type": "Copy",
+      "inputs": [
+        {
+          "referenceName": "EmployeeFlatFileDataset",
+          "type": "DatasetReference"
+        }
+      ],
+      "outputs": [
+        {
+          "referenceName": "EmployeeSqlTableDataset",
+          "type": "DatasetReference"
+        }
+      ],
+      "typeProperties": {
+        "source": {
+          "type": "DelimitedTextSource"
+        },
+        "sink": {
+          "type": "SqlSink",
+          "writeBatchSize": 0
+        }
+      }
+    }
+  ],
+  "properties": {
+    "activities": [
+      {
+        "name": "Unmapped_SSIS_Task",
+        "type": "ExecutePipeline",
+        "typeProperties": {}
+      }
+    ]
+  }
+}

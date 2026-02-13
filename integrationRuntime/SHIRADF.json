@@ -1,0 +1,7 @@
+{
+	"name": "SHIRADF",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Just to test to load it to Local MS SQL"
+	}
+}
